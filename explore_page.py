@@ -14,7 +14,7 @@ def modeltrain():
     validation_data_dir = r"hackathon/test"
     nb_train_samples = 47
     nb_validation_samples = 10
-    epochs = 100
+    epochs = 50
     batch_size = 16
     if K.image_data_format() == 'channels_first':
         input_shape = (3, img_width, img_height)
