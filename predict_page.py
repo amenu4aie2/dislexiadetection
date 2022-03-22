@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+import keras_applications
 from keras.models import load_model
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import image
