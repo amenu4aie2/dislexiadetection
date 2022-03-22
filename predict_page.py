@@ -39,7 +39,7 @@ def main():
         model = load_model('model_saved.h5')
 
         img = load_img(
-            r"C:\Users\cody\Downloads\studies\hackahon\dolls.png", target_size=(224, 224))
+            r"dolls.png", target_size=(224, 224))
         img = np.array(img)
 
         img = img/255
