@@ -7,7 +7,7 @@ from keras.preprocessing.image import img_to_array
 
 img_width, img_height = 224, 224
 
-
+#training
 def modeltrain():
     train_data_dir = r"C:\Users\cody\Downloads\studies\hackahon\hackathon\test"
 
