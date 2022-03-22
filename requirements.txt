@@ -1,17 +1,9 @@
-Cython
-imgaug>=0.3.0
-Keras==2.3.1
-tensorboard==1.15.0
-tensorflow==1.15.2
-h5py==2.10.0
-opencv-python-headless
-matplotlib
-pandas
-Pillow
+
+Flask == 0.11.1
+gevent
+gunicorn
+keras
 numpy
-requests
-scikit-image
-scikit-learn
-imageio
-scipy
-# pycocotools @ git+https://github.com/philferriere/cocoapi.git@2929bd2ef6b451054755dfd7ceb09278f935f7ad#subdirectory=PythonAPI
+h5py
+pillow
+https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0-cp27-none-linux_x86_64.whl
