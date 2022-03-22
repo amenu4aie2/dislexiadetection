@@ -41,3 +41,16 @@ def modeltrain():
     model.add(Dropout(0.5))
     model.add(Dense(1))
     model.add(Activation('sigmoid'))
+    model.compile(loss='binary_crossentropy',optimizer='rmsprop',metrics=['accuracy'])
+    train_datagen = ImageDataGenerator(rescale=1. / 255, shear_range=0.2, zoom_range=0.2,
+                                       horizontal_flip=True)
+
+
+    test_datagen = ImageDataGenerator(rescale=1. / 255)
+
+    train_generator = train_datagen.flow_from_directory(train_data_dir, target_size=(img_width, img_height),batch_size=batch_size, class_mode='binary')
+
+    validation_generator = test_datagen.flow_from_directory(validation_data_dir, target_size=(img_width, img_height),batch_size=batch_size, class_mode='binary')
+
+    model.fit(train_generator, steps_per_epoch=nb_train_samples // batch_size, epochs=epochs,validation_data=validation_generator,validation_steps=nb_validation_samples // batch_size)
+    model.save_weights('model_saved.h5')
