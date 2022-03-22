@@ -1,5 +1,3 @@
-
-Flask == 0.11.1
 gevent
 gunicorn
 keras
