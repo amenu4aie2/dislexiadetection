@@ -9,9 +9,9 @@ img_width, img_height = 224, 224
 
 #training
 def modeltrain():
-    train_data_dir = r"amenu4aie2/dislexiadetection/tree/main/hackathon/test"
+    train_data_dir = r"hackathon/test"
 
-    validation_data_dir = r"amenu4aie2/dislexiadetection/tree/main/hackathon/test"
+    validation_data_dir = r"hackathon/test"
     nb_train_samples = 47
     nb_validation_samples = 10
     epochs = 100
