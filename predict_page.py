@@ -1,8 +1,8 @@
 import streamlit as st
 from PIL import Image
 import keras_applications
-from keras.models import load_model
-from keras.preprocessing.image import load_img
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing.image import load_img
 from keras.preprocessing.image import image
 from keras.applications.vgg16 import preprocess_input
 from keras.applications.vgg16 import decode_predictions
@@ -38,8 +38,7 @@ def main():
 
         model = load_model('model_saved.h5')
 
-        img = load_img(
-            r"dolls.png", target_size=(224, 224))
+        img = load_img(r"hackahon\dolls.png", target_size=(224, 224))
         img = np.array(img)
 
         img = img/255
@@ -48,6 +47,4 @@ def main():
 
         st.write(
             "Predicted Class (0 - Non-dyslexia , 1- Dyslexia): ", label[0][0])
-
-
 main()
