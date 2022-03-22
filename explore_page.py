@@ -9,7 +9,7 @@ img_width, img_height = 224, 224
 
 #training
 def modeltrain():
-    train_data_dir = r"C:\Users\cody\Downloads\studies\hackahon\hackathon\test"
+    train_data_dir = r"C:\Users\cody\Downloads\studies\hackahon\hackathon\train"
 
     validation_data_dir = r"C:\Users\cody\Downloads\studies\hackahon\hackathon\test"
     nb_train_samples = 47
@@ -42,8 +42,7 @@ def modeltrain():
     model.add(Dense(1))
     model.add(Activation('sigmoid'))
     model.compile(loss='binary_crossentropy',optimizer='rmsprop',metrics=['accuracy'])
-    train_datagen = ImageDataGenerator(rescale=1. / 255, shear_range=0.2, zoom_range=0.2,
-                                       horizontal_flip=True)
+    train_datagen = ImageDataGenerator(rescale=1. / 255, shear_range=0.2, zoom_range=0.2,horizontal_flip=True)
 
 
     test_datagen = ImageDataGenerator(rescale=1. / 255)
