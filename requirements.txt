@@ -15,5 +15,4 @@ scikit-learn
 imageio
 scipy
 ry=PythonAPI
-pycocotools==2.0.2
-streamlit==1.7.0
+
