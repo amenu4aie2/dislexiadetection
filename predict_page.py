@@ -38,7 +38,7 @@ def main():
 
         model = load_model('model_saved.h5')
 
-        img = load_img(r"hackahon\dolls.png", target_size=(224, 224))
+        img = load_img(r"dolls.png", target_size=(224, 224))
         img = np.array(img)
 
         img = img/255
