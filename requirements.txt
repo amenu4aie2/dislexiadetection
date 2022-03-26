@@ -1,7 +1,6 @@
 Cython
 imgaug>=0.3.0
 Keras==2.7.0 
-tensorboard==1.15.0
 tensorflow==2.6.0
 opencv-python-headless
 matplotlib
