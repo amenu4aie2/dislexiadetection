@@ -1,16 +1,4 @@
-Cython
-imgaug>=0.3.0
-Keras==2.7.0 
-tensorflow==2.6.0
-opencv-python-headless
-matplotlib
-pandas
-Pillow
-six==1.15.0
-typing-extensions==3.7.4
-requests
-scikit-image
-scikit-learn
-imageio
-scipy
-# pycocotools @ git+https://github.com/philferriere/cocoapi.git@2929bd2ef6b451054755dfd7ceb09278f935f7ad#subdirectory=PythonAPI
+keras==2.8.0
+numpy==1.22.2
+Pillow==9.0.1
+streamlit==1.7.0
